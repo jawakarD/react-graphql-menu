@@ -1,9 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+html,
+body {
+  font-family: monospace;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 100px;
   pointer-events: none;
 }
 
@@ -13,26 +25,90 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App-body {
+  background-color: #202020;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-box {
+  display: flex;
+  min-width: 500px;
+  min-height: 300px;
+  padding: 20px;
+  border: 2px solid white;
+  flex-wrap: wrap;
+  max-height: 300px;
+  max-width: 500px;
+  overflow: scroll;
+}
+
+.menu-item {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+
+.name {
+  color: #ff00f6;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.action {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.item-price {
+  margin-top: 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+button {
+  color: #61dafb;
+  padding: 5px 15px;
+  background: none;
+  border: 2px solid #61dafb;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-form {
+  width: 500px;
+  align-self: normal;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.add-form .form {
+  margin: 20px 0;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-right: 30px;
+}
+
+.form-group input {
+  flex-grow: 1;
+  margin-left: auto;
+  color: black;
 }
